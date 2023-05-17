@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kcal/screens/splash/splash_screen.dart';
 
 void main() {
   runApp(const App());
@@ -14,7 +15,11 @@ class App extends StatefulWidget {
 class _AppState extends State<App> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder(
+    return MaterialApp(
+      routes: {
+        "/": (context) => const SplashScreen(),
+      },
+      initialRoute: "/",
     );
   }
 }
