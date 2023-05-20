@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:kcal/constants/color_constant.dart';
 import 'package:kcal/constants/text_constant.dart';
 import 'package:kcal/widgets/custom_button.dart';
+import 'package:kcal/widgets/onboarding_stepper.dart';
 
 class FirstOnboardingScreen extends StatelessWidget {
   const FirstOnboardingScreen({Key? key}) : super(key: key);
@@ -32,11 +33,15 @@ class FirstOnboardingScreen extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
             ),
+            const SizedBox(height: 12),
+            const OnboardingStepper(
+              currentStep: 1,
+            ),
             const Spacer(),
             const CustomButton(
               text: "Getting started",
             ),
-            const Spacer(),
+            const SizedBox(height: 16),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
