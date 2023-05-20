@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:kcal/screens/onboarding/first_onboarding_screen.dart';
+import 'package:kcal/screens/onboarding/second_onboarding_screen.dart';
+import 'package:kcal/screens/onboarding/third_onboarding_screen.dart';
 import 'package:kcal/screens/splash/splash_screen.dart';
 
 void main() {
@@ -20,6 +22,8 @@ class _AppState extends State<App> {
       routes: {
         "/": (context) => const SplashScreen(),
         "/first-onboarding": (context) => const FirstOnboardingScreen(),
+        "/second-onboarding": (context) => const SecondOnboardingScreen(),
+        "/third-onboarding": (context) => const ThirdOnboardingScreen(),
       },
       initialRoute: "/first-onboarding",
     );
