@@ -51,8 +51,11 @@ class OnboardingScreen extends StatelessWidget {
               currentStep: currentStep,
             ),
             const Spacer(),
-            const CustomButton(
+            CustomButton(
               text: "Getting started",
+              onPressed: () {
+                Navigator.pushNamed(context, nextStep);
+              },
             ),
             const SizedBox(height: 16),
             Row(
