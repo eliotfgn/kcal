@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:kcal/constants/color_constant.dart';
 
+import '../../constants/text_constant.dart';
+
 class SplashScreen extends StatelessWidget {
   const SplashScreen({Key? key}) : super(key: key);
 
@@ -15,7 +17,7 @@ class SplashScreen extends StatelessWidget {
           const Spacer(),
           Image.asset("assets/images/kcal-logo.png"),
           const Spacer(),
-          Text("ZUAMICA"),
+          Text("ZUAMICA", style: TextConstant.nunitoBold),
           const SizedBox(height: 95),
         ],
       )
