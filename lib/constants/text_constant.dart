@@ -10,4 +10,22 @@ class TextConstant {
     color: ColorConstant.splashScreenGreyText,
     decoration: TextDecoration.none,
   );
+
+  static TextStyle onboardingTitle = GoogleFonts.signika(
+    fontSize: 25,
+    fontWeight: FontWeight.w600,
+  );
+
+  static TextStyle onboardingText = GoogleFonts.signika(
+    fontSize: 17,
+    fontWeight: FontWeight.w400,
+    color: Colors.black45,
+    height: 1.4,
+  );
+
+  static TextStyle buttonText = GoogleFonts.signika(
+    fontSize: 25,
+    fontWeight: FontWeight.w600,
+    color: Colors.white,
+  );
 }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kcal/screens/onboarding/first_onboarding_screen.dart';
 import 'package:kcal/screens/splash/splash_screen.dart';
 
 void main() {
@@ -18,8 +19,9 @@ class _AppState extends State<App> {
     return MaterialApp(
       routes: {
         "/": (context) => const SplashScreen(),
+        "/first-onboarding": (context) => const FirstOnboardingScreen(),
       },
-      initialRoute: "/",
+      initialRoute: "/first-onboarding",
     );
   }
 }
