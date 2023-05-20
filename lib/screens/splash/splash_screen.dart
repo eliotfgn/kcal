@@ -8,19 +8,21 @@ class SplashScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: ColorConstant.primaryGreen,
-      height: MediaQuery.of(context).size.height,
-      width: MediaQuery.of(context).size.width,
-      child: Column(
-        children: [
-          const Spacer(),
-          Image.asset("assets/images/kcal-logo.png"),
-          const Spacer(),
-          Text("ZUAMICA", style: TextConstant.nunitoBold),
-          const SizedBox(height: 95),
-        ],
-      )
+    return Scaffold(
+      body: Container(
+        color: ColorConstant.primaryGreen,
+        height: MediaQuery.of(context).size.height,
+        width: MediaQuery.of(context).size.width,
+        child: Column(
+          children: [
+            const Spacer(),
+            Image.asset("assets/images/kcal-logo.png"),
+            const Spacer(),
+            Text("ZUAMICA", style: TextConstant.nunitoBold),
+            const SizedBox(height: 95),
+          ],
+        )
+      ),
     );
   }
 }
