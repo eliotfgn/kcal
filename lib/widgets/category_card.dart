@@ -16,14 +16,20 @@ class CategoryCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 45, vertical: 32),
+      width: 135,
+      height: 145,
+      decoration: BoxDecoration(
+        color: color,
+        borderRadius: BorderRadius.circular(32),
+      ),
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Image.asset(imagePath),
           const SizedBox(height: 12),
           Text(
             title,
-            style: TextConstant.nunitoBold,
+            style: TextConstant.homeText.copyWith(color: Colors.black),
           ),
         ],
       ),

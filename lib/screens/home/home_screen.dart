@@ -3,8 +3,28 @@ import 'package:kcal/constants/color_constant.dart';
 import 'package:kcal/constants/text_constant.dart';
 import 'package:kcal/widgets/onboarding_stepper.dart';
 
+import '../../widgets/category_card.dart';
+
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
+
+  static const List<Map<String, dynamic>> categories = [
+    {
+      "imagePath": "assets/images/fruits.png",
+      "title": "Fruits",
+      "color": Color(0XFFFFF2F0),
+    },
+    {
+      "imagePath": "assets/images/vegetables.png",
+      "title": "Vegetables",
+      "color": Color(0XFFEFF7EE),
+    },
+    {
+      "imagePath": "assets/images/snacks.png",
+      "title": "Snacks",
+      "color": Color(0XFFFFF8EB),
+    },
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -149,6 +169,29 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ),
               ),
+              const SizedBox(
+                height: 25,
+              ),
+              SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  children: [
+                    const SizedBox(
+                      width: 25,
+                    ),
+                    ...categories
+                        .map((element) => Padding(
+                              padding: const EdgeInsets.only(right: 25),
+                              child: CategoryCard(
+                                imagePath: element["imagePath"],
+                                title: element["title"],
+                                color: element["color"],
+                              ),
+                            ))
+                        .toList()
+                  ],
+                ),
+              )
             ],
           ),
         ),
