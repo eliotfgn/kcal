@@ -13,6 +13,10 @@ class FavoritesScreen extends StatefulWidget {
 }
 
 class _FavoritesScreenState extends State<FavoritesScreen> {
+  String section = "Food";
+
+  void change
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -59,10 +63,10 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
                     ),
                     child: Center(
                         child: Text(
-                      "Recipe",
-                      style: TextConstant.text
-                          .copyWith(color: ColorConstant.primary),
-                    )),
+                          "Recipe",
+                          style: TextConstant.text
+                              .copyWith(color: ColorConstant.primary),
+                        )),
                   ),
                 ),
               ],
