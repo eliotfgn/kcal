@@ -4,6 +4,7 @@ import 'package:kcal/screens/home/home_screen.dart';
 import 'package:kcal/screens/onboarding/first_onboarding_screen.dart';
 import 'package:kcal/screens/onboarding/second_onboarding_screen.dart';
 import 'package:kcal/screens/onboarding/third_onboarding_screen.dart';
+import 'package:kcal/screens/scan/scan_screen.dart';
 import 'package:kcal/screens/splash/splash_screen.dart';
 
 void main() {
@@ -28,8 +29,9 @@ class _AppState extends State<App> {
         "/third-onboarding": (context) => const ThirdOnboardingScreen(),
         "/home": (context) => const HomeScreen(),
         "/favorites": (context) => const FavoritesScreen(),
+        "/scan": (context) => const ScanScreen(),
       },
-      initialRoute: "/favorites",
+      initialRoute: "/scan",
     );
   }
 }
