@@ -32,7 +32,7 @@ class _AppState extends State<App> {
         "/favorites": (context) => const FavoritesScreen(),
         "/scan": (context) => const ScanScreen(),
       },
-      initialRoute: "/scan",
+      initialRoute: "/home",
     );
   }
 }

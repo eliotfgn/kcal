@@ -27,4 +27,8 @@ flutter:
 
   assets:
     - assets/images/
+  fonts:
+    - family: KcalIcon
+      fonts:
+        - asset: assets/fonts/MyFlutterApp.ttf
 
