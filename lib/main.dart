@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kcal/screens/home/home_screen.dart';
 import 'package:kcal/screens/onboarding/first_onboarding_screen.dart';
 import 'package:kcal/screens/onboarding/second_onboarding_screen.dart';
 import 'package:kcal/screens/onboarding/third_onboarding_screen.dart';
@@ -24,6 +25,7 @@ class _AppState extends State<App> {
         "/first-onboarding": (context) => const FirstOnboardingScreen(),
         "/second-onboarding": (context) => const SecondOnboardingScreen(),
         "/third-onboarding": (context) => const ThirdOnboardingScreen(),
+        "/home": (context) => const HomeScreen(),
       },
       initialRoute: "/first-onboarding",
     );
