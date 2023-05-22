@@ -1,5 +1,6 @@
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
+import 'package:kcal/screens/scan/scan_result.dart';
 import 'package:kcal/widgets/camera_command.dart';
 
 class ScanScreen extends StatefulWidget {
@@ -75,7 +76,15 @@ class _ScanScreenState extends State<ScanScreen> {
                 const Spacer(),
                 Image.asset("assets/images/scanner.png"),
                 const Spacer(),
-                const CameraCommand(),
+                CameraCommand(
+                  onTap: () {
+                    showModalBottomSheet(
+                      context: context,
+                      builder: (BuildContext bc) => const ScanResult(),
+                      isScrollControlled: true,
+                    );
+                  },
+                ),
               ],
             ),
           )

@@ -3,7 +3,9 @@ import 'package:flutter/material.dart';
 import '../constants/color_constant.dart';
 
 class CameraCommand extends StatelessWidget {
-  const CameraCommand({Key? key}) : super(key: key);
+  const CameraCommand({Key? key, required this.onTap}) : super(key: key);
+
+  final VoidCallback onTap;
 
   @override
   Widget build(BuildContext context) {
@@ -22,12 +24,15 @@ class CameraCommand extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Image.asset("assets/images/last-pic.png"),
-          const CircleAvatar(
-            backgroundColor: Color(0XFFFFC0B8),
-            radius: 36,
-            child: CircleAvatar(
-              backgroundColor: Color(0XFFFF8473),
-              radius: 20,
+          GestureDetector(
+            onTap: onTap,
+            child: const CircleAvatar(
+              backgroundColor: Color(0XFFFFC0B8),
+              radius: 36,
+              child: CircleAvatar(
+                backgroundColor: Color(0XFFFF8473),
+                radius: 20,
+              ),
             ),
           ),
           Container(
