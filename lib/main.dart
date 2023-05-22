@@ -8,6 +8,7 @@ import 'package:kcal/screens/scan/scan_screen.dart';
 import 'package:kcal/screens/splash/splash_screen.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(const App());
 }
 
