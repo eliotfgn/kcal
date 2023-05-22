@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kcal/constants/text_constant.dart';
+import 'package:kcal/screens/favorites/no_content.dart';
 import 'package:kcal/widgets/custom_button.dart';
 
 import '../../constants/color_constant.dart';
@@ -67,6 +68,8 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
               ],
             ),
           ),
+          const Spacer(),
+          const NoContent(contentType: "Food"),
           const Spacer(),
           CustomButton(text: "Search Food", onPressed: () {}),
           const SizedBox(height: 50),
