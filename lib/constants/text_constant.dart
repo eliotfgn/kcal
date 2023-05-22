@@ -32,7 +32,7 @@ class TextConstant {
   static TextStyle homeTitle = GoogleFonts.signika(
     fontSize: 25,
     fontWeight: FontWeight.w600,
-    color: ColorConstant.primaryGreen,
+    color: ColorConstant.primary,
   );
 
   static TextStyle homeText = GoogleFonts.signika(
@@ -45,7 +45,7 @@ class TextConstant {
   static TextStyle bannerTitle = GoogleFonts.signika(
     fontSize: 10,
     fontWeight: FontWeight.w600,
-    color: ColorConstant.primaryGreen,
+    color: ColorConstant.primary,
     letterSpacing: 1.5,
   );
 
@@ -63,5 +63,16 @@ class TextConstant {
   static TextStyle sectionTitle = GoogleFonts.signika(
     fontSize: 22,
     fontWeight: FontWeight.w600,
+  );
+
+  static TextStyle appBar = GoogleFonts.signika(
+    fontSize: 16,
+    fontWeight: FontWeight.w600,
+    color: Colors.black,
+  );
+
+  static TextStyle text = GoogleFonts.signika(
+    fontSize: 16,
+    fontWeight: FontWeight.w400,
   );
 }

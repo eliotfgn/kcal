@@ -69,7 +69,7 @@ class OnboardingScreen extends StatelessWidget {
                 Text(
                   'Log in',
                   style: TextConstant.onboardingText
-                      .copyWith(color: ColorConstant.primaryGreen),
+                      .copyWith(color: ColorConstant.primary),
                 ),
               ],
             ),

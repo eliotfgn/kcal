@@ -25,7 +25,7 @@ class _OnboardingStepperState extends State<OnboardingStepper> {
               width: widget.currentStep == index ? 20 : 12,
               decoration: BoxDecoration(
                 color: widget.currentStep == index
-                    ? ColorConstant.primaryGreen
+                    ? ColorConstant.primary
                     : ColorConstant.disableStepper,
                 borderRadius: BorderRadius.circular(16),
               ),

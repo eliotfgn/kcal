@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kcal/screens/favorites/favorites_screen.dart';
 import 'package:kcal/screens/home/home_screen.dart';
 import 'package:kcal/screens/onboarding/first_onboarding_screen.dart';
 import 'package:kcal/screens/onboarding/second_onboarding_screen.dart';
@@ -26,8 +27,9 @@ class _AppState extends State<App> {
         "/second-onboarding": (context) => const SecondOnboardingScreen(),
         "/third-onboarding": (context) => const ThirdOnboardingScreen(),
         "/home": (context) => const HomeScreen(),
+        "/favorites": (context) => const FavoritesScreen(),
       },
-      initialRoute: "/first-onboarding",
+      initialRoute: "/favorites",
     );
   }
 }
